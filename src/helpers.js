@@ -5,7 +5,7 @@ export function lessons() {
 }
 
 export function colors() {
-    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Brown', 'Black'];
+    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Pink', 'Black', 'Gray'];
 
     return colors;
 }
@@ -17,51 +17,92 @@ export function shapes() {
 }
 
 export function words() {
-    var words = ['birthday cake', 'green monster', 'blue monster', 'cake', 'pie', 'pizza', 'burger', 'taco', 'clock', 'calendar',
-        'pencil holder', 'beaver', 'elephant', 'panda', 'zipper', 'raft', 'popsicle', 'cactus', 'cracker', 'marshmallow', 'chocolate',
-        'record', 'cassette', 'CD', 'button', 'corn dog', 'candied apple', 'cupcake', 'marcaroons', 'green crayon', 'key', 'sushi', 'battery',
-        'breakfast', 'camera'];
+    var words = ['birthday cake','cake', 'pie', 'pizza', 'burger', 'taco', 'clock', 'calendar', 'pencil holder', 'beaver',
+        'elephant', 'panda', 'zipper', 'raft', 'popsicle', 'cactus', 'cracker', 'marshmallow', 'chocolate', 'record',
+        'cassette', 'CD', 'button', 'corn dog', 'apple', 'cupcake', 'green crayon', 'key', 'sushi',
+        'battery', 'breakfast', 'camera'];
 
     return words;
 }
 
-export function getColor(color){
+export function getColorName(rgb){
     var col = "na";
-    console.log(color);
 
-    switch(color){
-        case 'Red':
-            col = "rgba(237, 60, 47,.3)";
+    switch(rgb){
+        case "rgba(237, 60, 47, 0.7)":
+            col = 'Red';
             break;
-        case 'Orange':
-            col = "rgba(247, 113, 46,.3)";
+        case "rgba(247, 113, 46, 0.7)":
+            col = 'Orange';
             break;
-        case 'Yellow':
-            col = "rgba(249, 236, 92,.3)";
+        case "rgba(249, 236, 92, 0.7)":
+            col = 'Yellow';
             break;
-        case 'Green':
-            col = "rgba(79, 209, 85,.3)";
+        case "rgba(79, 209, 85, 0.7)":
+            col = 'Green';
             break;
-        case 'Blue':
-            col = "rgba(114, 175, 249,.3)";
+        case "rgba(114, 175, 249, 0.7)" :
+            col = 'Blue';
             break;
-        case 'Purple':
-            col = "rgba(157, 30, 216,.3)";
+        case "rgba(157, 30, 216, 0.7)" :
+            col = 'Purple';
             break;
-        case 'Brown':
-            col = "rgba(127, 75, 2, .3)";
+        case "rgba(255, 0, 128, 0.7)" :
+            col = 'Pink';
             break;
-        case 'Black':
-            col = "rgba(0, 0, 0, .3)";
+        case "rgba(0, 0, 0, 0.7)" :
+            col = 'Black';
             break;
-
+        case "rgba(189,195,199, 0.7)" :
+            col = "Gray";
+            break;
     }
 
     return col;
 }
 
+export function getColor(color){
+    var col = "na";
+
+    switch(color){
+        case 'Red':
+            col = "rgba(237, 60, 47, 0.7)";
+            break;
+        case 'Orange':
+            col = "rgba(247, 113, 46, 0.7)";
+            break;
+        case 'Yellow':
+            col = "rgba(249, 236, 92, 0.7)";
+            break;
+        case 'Green':
+            col = "rgba(79, 209, 85, 0.7)";
+            break;
+        case 'Blue':
+            col = "rgba(114, 175, 249, 0.7)";
+            break;
+        case 'Purple':
+            col = "rgba(157, 30, 216, 0.7)";
+            break;
+        case 'Pink':
+            col = "rgba(255, 0, 128, 0.7)";
+            break;
+        case 'Black':
+            col = "rgba(0, 0, 0, 0.7)";
+            break;
+        case "Gray":
+            col = "rgba(189,195,199, 0.7)"
+            break;
+    }
+
+    return col;
+}
+
+
+
 export function sounds() {
-    var sounds = [];
+    var sounds = ['dog', 'cat', 'bird', 'rabbit', 'frog', 'cow', 'elephant', 'duck', 'fish', 'lion', 'tiger', 'horse',
+        'chicken', 'pig', 'sheep', 'alligator', 'bear', 'moose', 'octopus', 'shark', 'squirrel', 'penguin', 'polar bear', 'turtle',
+        'giraffe', 'panda', 'monkey', 'butterfly', 'zebra', 'bee'];
     return sounds;
 }
 

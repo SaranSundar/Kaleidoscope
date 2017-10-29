@@ -59,20 +59,20 @@ class App extends Component {
                                        setMode={this.setMode} {...props}/>)}/>
 
                     <Match exactly pattern="/colors/learn" exact render={(props) => (
-                        <ColorsCard setMode={this.setMode} zoomLevel={this.state.zoomLevel} {...props}/>)}/>
+                        <ColorsCard setMode={this.setMode} setUser={this.setUser}  zoomLevel={this.state.zoomLevel} {...props}/>)}/>
 
 
                     <Match exactly pattern="/shapes/learn" exact render={(props) => (
-                        <ShapeCard setMode={this.setMode} {...props}/>)}/>
+                        <ShapeCard setMode={this.setMode} setUser={this.setUser} {...props}/>)}/>
 
                     <Match exactly pattern="/sounds/learn" exact render={(props) => (
-                        <SoundCard setMode={this.setMode} {...props}/>)}/>
+                        <SoundCard setMode={this.setMode} setUser={this.setUser} name="Sounds" {...props}/>)}/>
 
                     <Match exactly pattern="/math/learn" exact render={(props) => (
-                        <MathCard setMode={this.setMode} {...props}/>)}/>
+                        <MathCard setMode={this.setMode} setUser={this.setUser} {...props}/>)}/>
 
                     <Match exactly pattern="/words/learn" exact render={(props) => (
-                        <WordCard setMode={this.setMode} {...props}/>)}/>
+                        <WordCard setMode={this.setMode} setUser={this.setUser} {...props}/>)}/>
 
                     <Miss component={NotFound}/>
                 </div>

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "@types/serialport": "^6.0.0",
     "autoprefixer-stylus": "0.10.0",
     "babel-eslint": "^7.1.1",
     "concurrently": "3.0.0",
@@ -14,7 +15,10 @@
     "stylus": "0.54.5"
   },
   "dependencies": {
+    "bingspeech-api-client": "^2.3.1",
+    "cognitive-services": "^0.5.0",
     "history": "4.2.0",
+    "node-bing-api": "^3.2.2",
     "pixi.js": "^4.6.0",
     "re-base": "2.2.0",
     "react": "^15.6.2",
@@ -22,7 +26,12 @@
     "react-dom": "^15.6.2",
     "react-draggable": "^3.0.3",
     "react-pixi": "^0.9.15",
-    "react-router": "4.0.0-alpha.4"
+    "react-router": "4.0.0-alpha.4",
+    "react-speech": "^0.3.2",
+    "speaker": "^0.4.0",
+    "speech": "^0.2.1",
+    "wav": "^1.0.1",
+    "xmlbuilder": "^9.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
