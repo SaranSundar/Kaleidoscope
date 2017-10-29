@@ -20,7 +20,7 @@
     z-index: 1;
 }
 
-#answer{
+#answer {
     margin: 10px;
     width: 33vw;
     z-index: -999;
@@ -31,15 +31,15 @@
     text-align: center;
 }
 
-#answer h1{
+#answer h1 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     font-size: 48px;
 }
 
-@media only screen and (max-width : 480px) {
-    .box{
+@media only screen and (max-width: 480px) {
+    .box {
         width: 80px;
         height: 80px;
     }
@@ -57,8 +57,8 @@ html, body, .content {
     color: white;
 }
 
-.turquoise:hover{
-    background-color: rgb(0,142,110);
+.turquoise:hover {
+    background-color: rgb(0, 142, 110);
     color: white;
 }
 
@@ -67,7 +67,7 @@ html, body, .content {
     color: white;
 }
 
-.crimson:hover{
+.crimson:hover {
     background-color: rgb(201, 46, 0);
     color: white;
 }
@@ -77,7 +77,7 @@ html, body, .content {
     color: white;
 }
 
-.purple:hover{
+.purple:hover {
     background-color: rgb(112, 38, 143);
     color: white;
 }
@@ -116,7 +116,7 @@ html, body, .content {
     font-size: 20px;
 }
 
-.parallax{
+.parallax {
     position: relative;
     min-height: 60vh;
     background-attachment: fixed;
@@ -125,11 +125,11 @@ html, body, .content {
     background-size: cover;
 }
 
-#books{
+#books {
     background-image: url("https://images.pexels.com/photos/159621/open-book-library-education-read-159621.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
 }
 
-.pops{
+.pops {
     position: relative;
     top: 18vh;
     color: white;
@@ -137,20 +137,20 @@ html, body, .content {
     text-shadow: 2px 2px #000;
 }
 
-.content{
+.content {
     background-image: none;
     background-color: transparent;
 }
 
-.canvas{
+.canvas {
     overflow: hidden;
 }
 
-.margin-top{
+.margin-top {
     margin-top: 20px;
 }
 
-.wrapper{
+.wrapper {
     width: 100vw;
 }
 
@@ -158,38 +158,44 @@ html, body, .content {
     overflow: hidden;
 }
 
-.math{
+.math {
     font-size: 72px;
 }
 
-.vcenter{
+.vcenter {
     margin-top: 40vh;
 }
 
-#mathInput{
+#mathInput {
     background-color: transparent;
     border: none;
     font-size: 72px;
 
 }
 
-#mathInput:focus{
+#mathInput:focus {
     outline: none;
 }
 
-.content h1{
+.content h1 {
     margin-top: 150px;
 }
 
-.content h2{
+.content h2 {
     margin-bottom: 150px;
 }
 
-.profile{
+.profile {
     border-radius: 50%;
     min-width: 100%;
 }
 
-.column{
+.column {
     text-align: center;
+}
+
+#title {
+    margin-bottom: 100px;
+    font-size: 52px;
+    color: black;
 }

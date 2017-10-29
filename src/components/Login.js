@@ -57,8 +57,9 @@ class Login extends Component {
                             <div className="container">
                                 <div className="navbar-brand">
                                     <Link className="navbar-item" to="/">
-                                        <img src="https://files.slack.com/files-pri/T7QF7AU0P-F7RKRFNR3/kaleidoscope.png"
-                                             alt="Kaleidoscope"/>
+                                        <img
+                                            src="https://files.slack.com/files-pri/T7QF7AU0P-F7RKRFNR3/kaleidoscope.png"
+                                            alt="Kaleidoscope"/>
                                     </Link>
 
                                     <Link className="navbar-item" to="/">Home</Link>

@@ -10,29 +10,6 @@ window.ev = false;
 
 class ColorsCard extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = ({
-            activeDrags: 0,
-            deltaPosition: {
-                x: 0, y: 0
-            },
-            controlledPosition: {
-                x: 50, y: 200
-            },
-            box1Color: null,
-            box2Color: null,
-            box3Color: null,
-            box4Color: null,
-            answerColor: null,
-        });
-        //this.setState({answerColor : Math.random() < 0.5 ? this.state.box1Color : this.state.box3Color});
-    }
-
-    componentDidMount() {
-        this.setColors();
-    }
-
     setColors = () => {
         var box1Color = randomColor();
         var box2Color = randomColor();
@@ -64,7 +41,6 @@ class ColorsCard extends Component {
         }
         this.setState({box1Color, box2Color, box3Color, box4Color, answerColor});
     };
-
     handleDrag = (e, ui) => {
         const {x, y} = this.state.deltaPosition;
         this.setState({
@@ -74,18 +50,12 @@ class ColorsCard extends Component {
             }
         });
     };
-
     onStart = () => {
         this.setState({activeDrags: ++this.state.activeDrags});
     };
-
     onStop = () => {
         this.setState({activeDrags: --this.state.activeDrags});
     };
-
-
-
-
     testStop = (id) => {
         console.log(id);
         if (window.ev) {
@@ -138,6 +108,29 @@ class ColorsCard extends Component {
         // }
 
     };
+
+    constructor(props) {
+        super(props);
+        this.state = ({
+            activeDrags: 0,
+            deltaPosition: {
+                x: 0, y: 0
+            },
+            controlledPosition: {
+                x: 50, y: 200
+            },
+            box1Color: null,
+            box2Color: null,
+            box3Color: null,
+            box4Color: null,
+            answerColor: null,
+        });
+        //this.setState({answerColor : Math.random() < 0.5 ? this.state.box1Color : this.state.box3Color});
+    }
+
+    componentDidMount() {
+        this.setColors();
+    }
 
     render() {
 

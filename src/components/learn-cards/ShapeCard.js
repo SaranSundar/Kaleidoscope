@@ -6,9 +6,10 @@ class ShapeCard extends Component {
     }
 
     render() {
-        return(
+        return (
             <div></div>
         )
     }
 }
+
 export default ShapeCard;

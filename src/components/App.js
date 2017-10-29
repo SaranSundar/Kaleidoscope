@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Match, Miss} from "react-router";
-import NotFound from "./NotFound";
+import {BrowserRouter, Match} from "react-router";
 import CatalogScreen from "./CatalogScreen";
 import SoundCard from "./learn-cards/SoundCard";
 import WordCard from "./learn-cards/WordCard";
 import MathCard from "./learn-cards/MathCard";
-import ShapeCard from "./learn-cards/ShapeCard";
 import Home from "./Home";
 import ColorsCard from "./learn-cards/ColorsCard";
 
@@ -59,14 +57,11 @@ class App extends Component {
                                        setMode={this.setMode} {...props}/>)}/>
 
                     <Match exactly pattern="/colors/learn" exact render={(props) => (
-                        <ColorsCard setMode={this.setMode} setUser={this.setUser}  zoomLevel={this.state.zoomLevel} {...props}/>)}/>
+                        <ColorsCard setMode={this.setMode} setUser={this.setUser}
+                                    zoomLevel={this.state.zoomLevel} {...props}/>)}/>
 
-
-                    <Match exactly pattern="/shapes/learn" exact render={(props) => (
-                        <ShapeCard setMode={this.setMode} setUser={this.setUser} {...props}/>)}/>
-
-                    <Match exactly pattern="/sounds/learn" exact render={(props) => (
-                        <SoundCard setMode={this.setMode} setUser={this.setUser} name="Sounds" {...props}/>)}/>
+                    <Match exactly pattern="/animals/learn" exact render={(props) => (
+                        <SoundCard setMode={this.setMode} setUser={this.setUser} name="Animals" {...props}/>)}/>
 
                     <Match exactly pattern="/math/learn" exact render={(props) => (
                         <MathCard setMode={this.setMode} setUser={this.setUser} {...props}/>)}/>

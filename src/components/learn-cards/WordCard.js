@@ -1,22 +1,21 @@
 import React, {Component} from 'react';
-import {words} from "../../helpers";
+import {sounds} from "../../helpers";
 import Login from "../Login";
 
-var colors = ["button turquoise","button crimson","button purple","button yellow","button blue"];
+var colors = ["button turquoise", "button crimson", "button purple", "button yellow", "button blue"];
 
 class WordCard extends Component {
 
 
+    // hconstructor(props) {
+    //     super(props);
+    //     this.state = ({
+    //         boxColor: null,
+    //         bgImg: null,
+    //         textColor: null,
+    //     });
 
-    constructor(props) {
-        super(props);
-        this.state = ({
-            boxColor: null,
-            bgImg: null,
-            textColor: null,
-        });
-
-    }
+    // }
 
 
     handleClick = (e) => {
@@ -29,14 +28,14 @@ class WordCard extends Component {
     setUser;
 
 
-
-
     render() {
-        const listItems = words().map((sound, index) =>
-            <div className="column has-text-centered is-2">
-                <button className={colors[Math.floor(Math.random()*5)]} key={sound} onClick={(e) => this.handleClick(e)}>
+        const listItems = sounds().map((sound, index) =>
+            <div className="column has-text-centered is-2" key={sound}>
+                <button className={colors[Math.floor(Math.random() * 5)]}
+                        onClick={(e) => this.handleClick(e)}>
                     {sound}
                 </button>
+                <img    />
             </div>
         );
         return (

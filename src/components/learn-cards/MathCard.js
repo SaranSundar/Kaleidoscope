@@ -4,6 +4,23 @@ import Login from "../Login";
 
 class MathCard extends Component {
 
+    setNumbers = () => {
+
+        var num1 = Math.floor((Math.random() * Math.pow(10, this.state.level)) + 1);
+        var num2 = Math.floor((Math.random() * Math.pow(10, this.state.level)) + 1);
+        var chance = Math.floor((Math.random() * 10) + 1);
+        var op = "";
+        if (chance >= 5) {
+            op = "+";
+        }
+        else {
+            op = "-";
+        }
+
+        this.setState({randomNum1: num1, randomNum2: num2, operation: op});
+        document.getElementById("mathInput").value = null;
+    };
+
     constructor(props) {
         super(props);
         this.state = ({
@@ -24,46 +41,29 @@ class MathCard extends Component {
         var sign = document.getElementById("sign");
         if (this.state.operation === "+") {
             if (parseInt(this.answer.value) === this.state.randomNum1 + this.state.randomNum2) {
-                alert("YOUR ANSWER IS RIGHT");
+                alert("Correct!");
                 this.setState({score: this.state.score + 1});
                 this.setNumbers();
 
             }
             else {
-                alert("TRY AGAIN");
+                alert("Try again!");
             }
         }
         else if (this.state.operation === "-") {
             if (parseInt(this.answer.value) === this.state.randomNum1 - this.state.randomNum2) {
-                alert("YOUR ANSWER IS RIGHT");
+                alert("Correct!");
                 this.setState({score: this.state.score + 1});
                 this.setNumbers();
 
             }
             else {
-                alert("TRY AGAIN");
+                alert("Try again!");
             }
         }
         this.answer.clear()
 
     }
-
-    setNumbers = () => {
-
-        var num1 = Math.floor((Math.random() * Math.pow(10, this.state.level)) + 1);
-        var num2 = Math.floor((Math.random() * Math.pow(10, this.state.level)) + 1);
-        var chance = Math.floor((Math.random() * 10) + 1);
-        var op = "";
-        if (chance >= 5) {
-            op = "+";
-        }
-        else {
-            op = "-";
-        }
-
-        this.setState({randomNum1: num1, randomNum2: num2, operation: op});
-        document.getElementById("mathInput").value = null;
-    };
 
     render() {
         if (this.state.operation) {
