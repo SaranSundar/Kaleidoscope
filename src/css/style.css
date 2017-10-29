@@ -1,0 +1,84 @@
+.button {
+    height: 150px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+html, body {
+    height: 100%;
+    background-image: url("https://files.slack.com/files-tmb/T7QF7AU0P-F7RLDNC5B-95177cd9c0/hypnotize_360.png");
+    background-size: 25%;
+}
+
+.turquoise {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.crimson {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.purple {
+    background-color: #8e44ad;
+    color: white;
+}
+
+.yellow {
+    background-color: #f1c40f;
+    color: white;
+}
+
+.blue {
+    background-color: #3498db;
+    color: white;
+}
+
+.darkblue {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.gray {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+.navbar a {
+    font-size: 20px;
+}
+
+.parallax{
+    position: relative;
+    min-height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#books{
+    background-image: url("https://images.pexels.com/photos/159621/open-book-library-education-read-159621.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+
+.pops{
+    position: relative;
+    top: 18vh;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px #000;
+}
+
+.test{
+    height: 1000px;
+    background-color: white;
+}
+
+.canvas{
+    overflow: hidden;
+}
