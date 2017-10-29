@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {sounds} from "../../helpers";
 import Login from "../Login";
+import { BingSpeechClient, VoiceVoiceSynthesisResponse } from 'bingspeech-api-client';
 
 var colors = ["button turquoise","button crimson","button purple","button yellow","button blue"];
 
@@ -9,11 +10,16 @@ class SoundCard extends Component {
 
 
     handleClick = (e) => {
-        var msg = new SpeechSynthesisUtterance();
-        //var voices = window.speechSynthesis.getVoices();
-        msg.text = e.target.innerHTML;
-        // msg.lang = 'ta-MY';
-        window.speechSynthesis.speak(msg);
+        // var msg = new SpeechSynthesisUtterance();
+        // //var voices = window.speechSynthesis.getVoices();
+        // msg.text = e.target.innerHTML;
+        // // msg.lang = 'ta-MY';
+        // window.speechSynthesis.speak(msg);
+
+        let subscriptionKey = '5e128f97f2ba48328b40879815b1366a';
+        let client = new BingSpeechClient(subscriptionKey);
+        console.log("CLIENT IS " + client);
+        client.synthesizeStream('I have a dream').then(audioStream => console.log(audioStream));
     };
     setUser;
 

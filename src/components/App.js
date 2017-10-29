@@ -74,7 +74,7 @@ class App extends Component {
                     <Match exactly pattern="/words/learn" exact render={(props) => (
                         <WordCard setMode={this.setMode} setUser={this.setUser} {...props}/>)}/>
 
-                    <Miss component={NotFound}/>
+                    {/**/}
                 </div>
             </BrowserRouter>
         );

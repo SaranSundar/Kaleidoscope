@@ -38,10 +38,10 @@
     font-size: 48px;
 }
 
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
     .box{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -188,4 +188,8 @@ html, body, .content {
 .profile{
     border-radius: 50%;
     min-width: 100%;
+}
+
+.column{
+    text-align: center;
 }

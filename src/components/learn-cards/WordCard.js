@@ -6,6 +6,19 @@ var colors = ["button turquoise","button crimson","button purple","button yellow
 
 class WordCard extends Component {
 
+
+
+    constructor(props) {
+        super(props);
+        this.state = ({
+            boxColor: null,
+            bgImg: null,
+            textColor: null,
+        });
+
+    }
+
+
     handleClick = (e) => {
         var msg = new SpeechSynthesisUtterance();
         //var voices = window.speechSynthesis.getVoices();
@@ -14,6 +27,9 @@ class WordCard extends Component {
         window.speechSynthesis.speak(msg);
     };
     setUser;
+
+
+
 
     render() {
         const listItems = words().map((sound, index) =>

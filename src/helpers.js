@@ -17,10 +17,10 @@ export function shapes() {
 }
 
 export function words() {
-    var words = ['birthday cake','cake', 'pie', 'pizza', 'burger', 'taco', 'clock', 'calendar', 'pencil holder', 'beaver',
+    var words = ['birthday cake','cake', 'pie', 'pizza', 'burger', 'taco', 'clock', 'calendar', 'pencil cup', 'beaver',
         'elephant', 'panda', 'zipper', 'raft', 'popsicle', 'cactus', 'cracker', 'marshmallow', 'chocolate', 'record',
         'cassette', 'CD', 'button', 'corn dog', 'apple', 'cupcake', 'green crayon', 'key', 'sushi',
-        'battery', 'breakfast', 'camera'];
+        'battery'];
 
     return words;
 }

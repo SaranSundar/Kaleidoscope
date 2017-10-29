@@ -174,22 +174,19 @@ class ColorsCard extends Component {
         if (this.state.box1Color) {
             return (
                 <div>
-                    <div className="wrapper">
-                        <div className="columns is-multiline margin-top">
-                            <div className="column is-one-quarter is-one-third-mobile">
-                                {box1}
-                            </div>
-                            <div className="column is-one-quarter is-one-third-mobile">
-                                {box2}
-                            </div>
+                    <div className="columns is-multiline margin-top">
+                        <div className="column is-4-mobile">
+                            {box1}
+                        </div>
+                        <div className="column is-4-mobile">
+                            {box2}
+                        </div>
+                        <div className="column is-4-mobile">
+                            {box3}
+                        </div>
 
-                            <div className="column is-one-quarter is-one-third-mobile">
-                                {box3}
-                            </div>
-
-                            <div className="column is-one-quarter is-one-third-mobile">
-                                {box4}
-                            </div>
+                        <div className="column is-4-mobile">
+                            {box4}
                         </div>
                     </div>
 

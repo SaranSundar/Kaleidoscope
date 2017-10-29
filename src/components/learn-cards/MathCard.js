@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Login from "../Login";
 
 
 class MathCard extends Component {
@@ -18,27 +19,28 @@ class MathCard extends Component {
         this.setNumbers();
     }
 
-    validateInput(e){
+    validateInput(e) {
         e.preventDefault();
-        if(this.state.operation === "+"){
-            if(parseInt(this.answer.value) === this.state.randomNum1 + this.state.randomNum2){
+        var sign = document.getElementById("sign");
+        if (this.state.operation === "+") {
+            if (parseInt(this.answer.value) === this.state.randomNum1 + this.state.randomNum2) {
                 alert("YOUR ANSWER IS RIGHT");
-                this.setState({score: this.state.score+1});
+                this.setState({score: this.state.score + 1});
                 this.setNumbers();
 
             }
-            else{
+            else {
                 alert("TRY AGAIN");
             }
         }
-        else if(this.state.operation === "-"){
-            if(parseInt(this.answer.value) === this.state.randomNum1 - this.state.randomNum2){
+        else if (this.state.operation === "-") {
+            if (parseInt(this.answer.value) === this.state.randomNum1 - this.state.randomNum2) {
                 alert("YOUR ANSWER IS RIGHT");
-                this.setState({score: this.state.score+1});
+                this.setState({score: this.state.score + 1});
                 this.setNumbers();
 
             }
-            else{
+            else {
                 alert("TRY AGAIN");
             }
         }
@@ -66,27 +68,31 @@ class MathCard extends Component {
     render() {
         if (this.state.operation) {
             return (
-                <form onSubmit={(e) => this.validateInput(e)}>
-                    <div className="container vcenter hidden">
-                        <div className="columns">
-                            <div className="column has-text-centered is-2">
-                                <h1 className="math">{this.state.randomNum1}</h1>
-                            </div>
-                            <div className="column has-text-centered is-2">
-                                <h1 className="math">{this.state.operation}</h1>
-                            </div>
-                            <div className="column has-text-centered is-2">
-                                <h1 className="math">{this.state.randomNum2}</h1>
-                            </div>
-                            <div className="column has-text-centered is-2">
-                                <h1 className="math">=</h1>
-                            </div>
-                            <div className="column has-text-centered is-2">
-                                <input ref={(input) => this.answer = input} type="text" id="mathInput" placeholder="Answer!"/>
+                <div>
+                    <Login setUser={this.props.setUser}/>
+                    <form onSubmit={(e) => this.validateInput(e)}>
+                        <div className="container vcenter hidden">
+                            <div className="columns">
+                                <div className="column has-text-centered is-2">
+                                    <h1 className="math">{this.state.randomNum1}</h1>
+                                </div>
+                                <div className="column has-text-centered is-2">
+                                    <h1 className="math">{this.state.operation}</h1>
+                                </div>
+                                <div className="column has-text-centered is-2">
+                                    <h1 className="math">{this.state.randomNum2}</h1>
+                                </div>
+                                <div className="column has-text-centered is-2">
+                                    <h1 className="math">=</h1>
+                                </div>
+                                <div className="column has-text-centered is-2">
+                                    <input ref={(input) => this.answer = input} type="text" id="mathInput"
+                                           placeholder="Answer!"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             );
         }
         else {

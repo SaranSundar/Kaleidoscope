@@ -44,8 +44,10 @@ class Login extends Component {
 
     render() {
         var username = "Guest";
+        var photosrc = '';
         if (this.state.user) {
             username = this.state.user.displayName || this.state.user.email;
+            photosrc = this.state.user.photoURL;
         }
         return (
             <div>
@@ -54,15 +56,13 @@ class Login extends Component {
                         <div className="navbar darkblue">
                             <div className="container">
                                 <div className="navbar-brand">
-                                    <a className="navbar-item" href="#">
+                                    <Link className="navbar-item" to="/">
                                         <img src="https://files.slack.com/files-pri/T7QF7AU0P-F7RKRFNR3/kaleidoscope.png"
                                              alt="Kaleidoscope"/>
-                                    </a>
+                                    </Link>
 
                                     <Link className="navbar-item" to="/">Home</Link>
                                     <Link className="navbar-item" to="/catalog">Learn</Link>
-
-
                                 </div>
                                 <div className="navbar-menu">
                                     <div className="navbar-end">
