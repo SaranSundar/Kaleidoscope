@@ -29,19 +29,19 @@ class Home extends Component {
                     <div className="columns">
                         <div className="column has-text-centered">
                             <img className="profile"
-                                 src="https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/18359216_101454380435523_4392569105060136075_o.jpg?oh=e8bcf4d05e8ba72c5a68af3d8a3f2c52&oe=5A72802D"
+                                 src="https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/26195985_191325288115098_4224693865787201271_n.jpg?oh=af105eba9e6d29007853c806fadcbb0c&oe=5B1ADA74"
                                  alt="Abhishek"/>
                             <h1>Abhishek Dayal</h1>
                         </div>
                         <div className="column has-text-centered">
                             <img className="profile"
-                                 src="https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/17546691_10212072514146713_2979458804211560338_o.jpg?oh=c86a59760684f5a63b6787f9b8a75173&oe=5A68F53C"
+                                 src="https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/17546691_10212072514146713_2979458804211560338_o.jpg?oh=5ba345be509f70f4f121accca76e99d4&oe=5ADF9C3C"
                                  alt="Alvin"/>
                             <h1>Alvin Lo</h1>
                         </div>
                         <div className="column has-text-centered">
                             <img className="profile"
-                                 src="https://avatars0.githubusercontent.com/u/20052335?s=400&u=7496359bd1b63bf8d92cc9f8ea46319635feb74c&v=4"
+                                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1714125/profile/profile-512.jpg?1516815428"
                                  alt="Chris"/>
                             <h1>Chris Nunes</h1>
                         </div>
@@ -53,7 +53,7 @@ class Home extends Component {
                         </div>
                         <div className="column has-text-centered">
                             <img className="profile"
-                                 src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/14446031_1303187519738245_5581739972931163004_n.jpg?oh=add000ed06428de065786ff83900ac34&oe=5A6704A4"
+                                 src="https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/14446031_1303187519738245_5581739972931163004_n.jpg?oh=18acf3eb38aa557620341ff926a36060&oe=5ADDABA4"
                                  alt="Saran"/>
                             <h1>Saran Sundararajan</h1>
                         </div>
